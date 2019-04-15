@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rest_order"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="商品分类"
+                android:textSize="15dp"/>
+
+            <ListView
+                android:id="@+id/left_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EAEAEA"
+                android:divider="@null"
+                android:scrollbars="none">
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Selected_LeftType"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="left"
+                android:backgroundTint="#ffffff"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:paddingLeft="3dp"
+                android:background="#EAEAEA"/>
+            <ListView
+                android:id="@+id/right_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:divider="@null"
+                android:scrollbars="none">
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_cart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#3D3D3D">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:id="@+id/cart"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/cart1"/>
+                <TextView
+                    android:id="@+id/totalCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="0"
+                    android:textSize="10dp"
+                    android:textColor="#ffffff"
+                    android:gravity="center"
+                    android:background="@drawable/foodcountshape"/>
+            </FrameLayout>
+            <TextView
+                android:id="@+id/TotalPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:paddingLeft="12dp"
+                android:paddingTop="10dp"
+                android:textSize="20dp"
+                android:textColor="#C2C2C2"
+                android:text="未选购商品"
+                />
+            <TextView
+                android:id="@+id/Settlement"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#666666"
+                android:gravity="center"
+                android:textColor="#CCCCCC"
+                android:textStyle="bold"
+                android:text="¥0起送"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

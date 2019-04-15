@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/food_type2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/Spinner_ZH2"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="5"
+            android:dropDownWidth="1000dp"
+            android:spinnerMode="dropdown"
+            android:overlapAnchor="false"
+            android:textAlignment="gravity"
+            android:background="#ffffff"
+            android:scrollbarSize="15dp">
+        </Spinner>
+        <ToggleButton
+            android:id="@+id/_JL2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:textOff="距离最近"
+            android:textOn="距离最近"
+            android:textSize="15dp"/>
+        <ToggleButton
+            android:id="@+id/_PZ2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:textOff="品质联盟"
+            android:textOn="品质联盟"
+            android:textSize="15dp"/>
+        <ToggleButton
+            android:id="@+id/_SX2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:textOff="筛选"
+            android:textOn="筛选"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#EEEED1"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:background="#ffffff"
+        android:id="@+id/recycler_rest2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

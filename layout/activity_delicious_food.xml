@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:psts="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_delicious_food"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="#4876FF"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:text="←"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="   美食"
+                android:textSize="20dp"
+                android:textColor="#ffffff"/>
+            <ImageView
+                android:id="@+id/_query"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@drawable/img_q"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.astuetz.PagerSlidingTabStrip
+                    android:id="@+id/pager_titles"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="8"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    psts:pstsIndicatorHeight="2dp"
+                    psts:pstsIndicatorColor="#ffffff"
+                    psts:pstsTabPaddingLeftRight="16dp">
+
+                </com.astuetz.PagerSlidingTabStrip>
+
+                <ImageView
+                    android:id="@+id/xia_la"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/Spinner_ZH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:dropDownWidth="1000dp"
+                android:spinnerMode="dropdown"
+                android:overlapAnchor="false"
+                android:textAlignment="gravity"
+                android:background="#ffffff"
+                android:scrollbarSize="15dp">
+            </Spinner>
+            <ToggleButton
+                android:id="@+id/_JL"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:textOff="距离最近"
+                android:textOn="距离最近"
+                android:textSize="15dp"/>
+            <ToggleButton
+                android:id="@+id/_PZ"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:textOff="品质联盟"
+                android:textOn="品质联盟"
+                android:textSize="15dp"/>
+            <ToggleButton
+                android:id="@+id/_SX"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:textOff="筛选"
+                android:textOn="筛选"
+                android:textSize="15dp"/>
+
+        </LinearLayout>-->
+    </android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>
